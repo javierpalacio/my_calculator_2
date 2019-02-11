@@ -22,6 +22,11 @@ function square4() {
   num.value = num.value * num.value * num.value * num.value;
 }
 
+function seno() {
+ var num = document.getElementById("n1");
+ num.value = Math.sin(num.value);
+}
+
 </script>
 </head>
 <body>
@@ -33,6 +38,7 @@ function square4() {
  <button onclick="cube()"> x^3> </button>
  <button onclick="square4()"> x^4 </button>
  <button onclick="inverso()"> 1/x </button>
+ <button onclick="seno()"> sin(x) </button>
  </p>
 </body>
 </html>
