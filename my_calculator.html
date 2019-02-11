@@ -1,14 +1,27 @@
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
+
 function cuadrado() {
  var num = document.getElementById("n1");
  num.value = Math.pow(num.value, 2);
 }
+
+function cube() {
+ var num = document.getElementById("n1");
+ num.value = Math.pow(num.value, 3);
+}
+
 function inverso() {
  var num = document.getElementById("n1");
  num.value = 1/num.value;
 }
+
+function square4() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value * num.value * num.value;
+}
+
 </script>
 </head>
 <body>
@@ -16,7 +29,9 @@ function inverso() {
  Number:
  <input type="text" id="n1">
  <p>
- <button onclick="cuadrado()"> x^2 </button>
+ <button onclick="cuadrado()"> x^2 </button> 
+ <button onclick="cube()"> x^3> </button>
+ <button onclick="square4()"> x^4 </button>
  <button onclick="inverso()"> 1/x </button>
  </p>
 </body>
